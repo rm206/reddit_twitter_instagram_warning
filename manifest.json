@@ -1,16 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "Reddit / Twitter Warning",
+    "name": "Reddit Warning Extension",
     "version": "1.0",
-    "description": "Warns you every time you open Reddit ro Twitter.",
+    "description": "Warns you when you open Reddit",
     "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage",
         "tabs",
-        "activeTab"
+        "notifications",
+        "system.display"
     ],
+    "action": {
+        "default_popup": "popup.html"
+    },
     "background": {
         "service_worker": "background.js"
     },
-    "action": {
-        "default_popup": "popup.html"
-    }
+    "host_permissions": [
+        "https://reddit.com/*"
+    ]
 }
