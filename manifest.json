@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Reddit / Twitter Warning",
+    "version": "1.0",
+    "description": "Warns you every time you open Reddit ro Twitter.",
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
