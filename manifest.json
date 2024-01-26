@@ -1,14 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Reddit Warning Extension",
+    "name": "Reddit/Twitter/Instagram Warning Extension",
     "version": "1.0",
-    "description": "Warns you when you open Reddit",
+    "description": "Warns you when you open Reddit/Twitter/Instagram",
     "permissions": [
-        "activeTab",
-        "declarativeContent",
-        "storage",
         "tabs",
-        "notifications",
         "system.display"
     ],
     "action": {
@@ -16,8 +12,5 @@
     },
     "background": {
         "service_worker": "background.js"
-    },
-    "host_permissions": [
-        "https://reddit.com/*"
-    ]
+    }
 }
